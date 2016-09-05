@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.6",
+    "cssnano": "^3.7.4",
     "ember-ajax": "^2.5.1",
     "ember-cli": "2.7.0",
     "ember-cli-app-version": "^2.0.0",
@@ -30,7 +31,12 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.1.0",
-    "loader.js": "^4.0.11"
+    "loader.js": "^4.0.11",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2",
+    "postcss-sassy-mixins": "^2.0.0",
+    "rucksack-css": "^0.8.6"
   },
   "keywords": [
     "ember-addon",
@@ -38,7 +44,8 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.10",
-    "ember-cli-htmlbars": "^1.1.0"
+    "ember-cli-htmlbars": "^1.1.0",
+    "ember-css-modules": "0.4.3"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
