@@ -1,0 +1,8 @@
+{{#if hasBlock}}
+  {{yield (hash
+    button=(component "choice/ui-button" size="medium")
+  )}}
+{{else}}
+  {{component "choice/ui-button" "取消" size="medium" color="gray"}}
+  {{component "choice/ui-button" "确定" size="medium" color="green"}}
+{{/if}}
