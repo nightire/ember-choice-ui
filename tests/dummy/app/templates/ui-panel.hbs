@@ -1,0 +1,11 @@
+<div class="wrapper narrow">
+  {{choice/ui-panel}}
+</div>
+
+<div class="wrapper">
+  {{#choice/ui-panel as |panel styles|}}
+    {{panel.header "很久很久以前"}}
+    {{panel.button color="purple" icon="ic-plus-w"}}
+    {{panel.content placeholder="汽车人大战霸天虎"}}
+  {{/choice/ui-panel}}
+</div>

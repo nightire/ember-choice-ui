@@ -1,0 +1,16 @@
+:global(.wrapper) {
+  width: 960px;
+  margin: 0 auto;
+}
+
+:global(.wrapper:first-child) {
+  margin-top: 12px;
+}
+
+:global(.wrapper:not(:last-child)) {
+  margin-bottom: 12px;
+}
+
+:global(.wrapper.narrow) {
+  width: 320px;
+}
