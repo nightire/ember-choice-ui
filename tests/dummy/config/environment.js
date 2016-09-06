@@ -1,7 +1,6 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dummy',
-    podModulePrefix: 'dummy/modules',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

@@ -9,7 +9,7 @@ module.exports = {
       plugins: {
         before: [
           require('postcss-sassy-mixins'),
-          require('postcss-import')({path: './app/styles'}),
+          require('postcss-import'),
           require('postcss-cssnext')({warnForDuplicates: false}),
           require('rucksack-css')({fallbacks: true})
         ],

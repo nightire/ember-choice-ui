@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Kiro, "Helvetica Neue", Helvetica, Arial, "Pingfang SC", STHeiti, "Microsoft YaHei", 微软雅黑, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
