@@ -14,3 +14,11 @@
 :global(.wrapper.narrow) {
   width: 320px;
 }
+
+:global(.wrapper.wider) {
+  width: 640px;
+}
+
+:global(.content) {
+  padding: 12px;
+}

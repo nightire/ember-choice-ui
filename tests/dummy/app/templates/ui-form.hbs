@@ -1,0 +1,25 @@
+<div class="wrapper wider">
+  <div class="content">
+    {{#choice/ui-form model.foo as |f|}}
+      {{f.checkbox-field "checkall" label="全选 Select All"}}
+      {{f.checkbox-field "inversed" label="反选 Inverse To"}}
+      <hr>
+      {{f.radio-field "gender" label="㊚"}}
+      {{f.radio-field "gender" label="㊛"}}
+    {{/choice/ui-form}}
+  </div>
+</div>
+
+<hr>
+
+<div class="wrapper">
+  <div class="content">
+    {{#choice/ui-form model.bar as |f|}}
+      {{f.checkbox-field "allcheck" label="All Select 全选"}}
+      {{f.checkbox-field "desrevni" label="Inverse To 反选"}}
+      <hr>
+      {{f.radio-field "redneg" label="♂"}}
+      {{f.radio-field "redneg" label="♀"}}
+    {{/choice/ui-form}}
+  </div>
+</div>
