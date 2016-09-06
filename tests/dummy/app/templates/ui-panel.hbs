@@ -1,5 +1,5 @@
 <div class="wrapper narrow">
-  {{choice/ui-panel}}
+  {{choice/ui-panel footer=true}}
 </div>
 
 <div class="wrapper">
@@ -7,5 +7,9 @@
     {{panel.header "很久很久以前"}}
     {{panel.button color="purple" icon="ic-plus-w"}}
     {{panel.content placeholder="汽车人大战霸天虎"}}
+    {{#panel.footer as |footer|}}
+      {{footer.button color="green"}}
+      {{footer.button "CANCEL" color="gray"}}
+    {{/panel.footer}}
   {{/choice/ui-panel}}
 </div>
