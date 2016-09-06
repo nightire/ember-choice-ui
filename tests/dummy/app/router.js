@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('ui-button');
+
   this.route('ui-panel');
 });
 
