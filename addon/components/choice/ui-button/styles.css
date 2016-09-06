@@ -1,0 +1,38 @@
+@import "../../../styles/utilities.css";
+@import "../../../styles/variables.css";
+
+.button {
+  @apply --reset-box;
+  @apply --truncate-text;
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: .875em;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.button.medium {
+  padding: 4px 12px;
+}
+
+.button.gray {
+  color: color(var(--color-dark-gray));
+  background-color: color(var(--color-silver) a(50%));
+
+  &:hover, &:focus {
+    color: color(var(--color-dark-slate));
+    background-color: color(var(--color-silver));
+  }
+}
+
+.button.green {
+  color: white;
+  background-color: color(var(--color-sea-green));
+
+  &:hover, &:focus {
+    background-color: color(var(--color-sea-green) shade(25%));
+  }
+}

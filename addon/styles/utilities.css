@@ -4,4 +4,10 @@
     padding: 0;
     border: none;
   }
+
+  --truncate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
