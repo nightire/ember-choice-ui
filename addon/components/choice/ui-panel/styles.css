@@ -1,0 +1,66 @@
+@import "../../../styles/utilities.css";
+@import "../../../styles/variables.css";
+
+.panel {
+  position: relative;
+  flex: 1 0 auto;
+  width: 100%;
+  border: 1px solid color(var(--color-silver));
+  border-radius: 2px;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.header {
+  padding: 6px 8px;
+  color: color(var(--color-dark-slate));
+  background-color: color(var(--color-silver) a(18%));
+  border-bottom: 1px solid color(var(--color-silver));
+  font-size: .875em;
+  line-height: 24px;
+}
+
+.button {
+  @apply --reset-box;
+  position: absolute 6px 8px auto auto;
+  padding: 2px;
+  border-radius: 3px;
+  opacity: .5;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    opacity: 1;
+  }
+
+  &.blue {
+    background-color: color(var(--color-blue));
+    opacity: 1;
+
+    &:hover, &:focus {
+      background-color: color(var(--color-blue) shade(25%));
+    }
+  }
+
+  &.purple {
+    background-color: color(var(--color-purple));
+    opacity: 1;
+
+    &:hover, &:focus {
+      background-color: color(var(--color-purple) shade(25%));
+    }
+  }
+}
+
+.content {
+  & .placeholder {
+    margin: 2em;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    color: color(var(--color-silver));
+  }
+}
+

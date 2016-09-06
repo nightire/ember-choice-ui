@@ -1,0 +1,11 @@
+{{#if hasBlock}}
+  {{yield (hash
+    header=(component "choice/ui-panel/header")
+    button=(component "choice/ui-panel/button")
+    content=(component "choice/ui-panel/content")
+    ) styles}}
+{{else}}
+  {{component "choice/ui-panel/header"}}
+  {{component "choice/ui-panel/button" icon="ic-plus-w"}}
+  {{component "choice/ui-panel/content"}}
+{{/if}}
