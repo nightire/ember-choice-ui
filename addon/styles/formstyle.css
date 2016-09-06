@@ -1,0 +1,44 @@
+@import "./utilities.css";
+@import "./variables.css";
+
+:global(.form-field) {
+  padding: 6px 12px;
+  font-size: .875em;
+  font-weight: bold;
+  color: color(var(--color-dark-slate));
+}
+
+input[type=checkbox],
+input[type=radio] {
+  position: absolute;
+  z-index: -1;
+  left: -1000%;
+}
+
+:global(.form-field--label) {
+  @apply --truncate-text;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding-left: 2rem;
+  vertical-align: middle;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-image: url(/ember-choice-ui/assets/images/checkbox.png);
+}
+
+:global(input[type=checkbox] + .form-field--label) {
+  background-position: 0 0;
+}
+
+:global(input[type=checkbox]:checked + .form-field--label) {
+  background-position: 0 -40px;
+}
+
+:global(input[type=radio] + .form-field--label) {
+  background-position: 0 -20px;
+}
+
+:global(input[type=radio]:checked + .form-field--label) {
+  background-position: 0 -60px;
+}
