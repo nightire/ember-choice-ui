@@ -12,4 +12,6 @@ export default Component.extend({
     return this.get(`styles.${this.get('color')}`);
   }),
   classNameBindings: ['styles.button', 'colorClassName'],
+
+  icon: 'ic-plus-w'
 }).reopenClass({ positionalParams: ['content'] });

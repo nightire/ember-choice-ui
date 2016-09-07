@@ -4,12 +4,10 @@ import RSVP from 'rsvp';
 export default Route.extend({
   model() {
     return RSVP.resolve({
-      foo: {
-        checkall: true
-      },
-      bar: {
-        allcheck: false
-      }
+      checkall: true,
+      inversed: false,
+      gender: 1,
+      title: '巧思问卷标题'
     });
   }
 });

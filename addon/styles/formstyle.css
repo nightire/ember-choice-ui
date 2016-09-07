@@ -2,10 +2,54 @@
 @import "./variables.css";
 
 :global(.form-field) {
+  position: relative;
+  clear: fix;
   padding: 6px 12px;
   font-size: .875em;
   font-weight: bold;
   color: color(var(--color-dark-slate));
+}
+
+:global(.form-field--label) {
+  @apply --truncate-text;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+:global(.form-field--hint) {
+  display: block;
+  color: color(var(--color-silver));
+
+  @media (--lt-md) { margin-top: 12px; font-size: 12px; }
+  @media (--lg) {
+    position: absolute 39px 0 auto auto;
+    width: 30%;
+    padding: 9px 0 10px 32px;
+    border-left: 1px solid color(var(--color-silver));
+    font-size: 13px;
+  }
+}
+
+:global(.form-field--control[type=text]) {
+  width: 64%;
+  padding: 7px 12px 8px;
+  border: 1px solid color(var(--color-silver));
+  border-radius: 2px;
+  transition: all .2s ease;
+
+  @media (--lt-md) { width: 100%; }
+  @media (--lg) { width: 64%; }
+
+  &:focus {
+    outline: none;
+    border-color: color(var(--color-purple) a(15));
+  }
+}
+
+:global(.form-field--label + input[type=text]) {
+  margin-top: 12px;
 }
 
 input[type=checkbox],
@@ -15,13 +59,9 @@ input[type=radio] {
   left: -1000%;
 }
 
-:global(.form-field--label) {
-  @apply --truncate-text;
-  cursor: pointer;
-  display: inline-block;
-  width: 100%;
+:global(input[type=checkbox] + .form-field--label),
+:global(input[type=radio] + .form-field--label) {
   padding-left: 2rem;
-  vertical-align: middle;
   background-size: 20px;
   background-repeat: no-repeat;
   background-image: url(/ember-choice-ui/assets/images/checkbox.png);

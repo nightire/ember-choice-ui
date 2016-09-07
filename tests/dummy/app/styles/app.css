@@ -1,6 +1,24 @@
 :global(.wrapper) {
-  width: 960px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  :global(.wrapper) {
+    mix-width: 320px;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :global(.wrapper) {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.wrapper) {
+    max-width: 940px;
+  }
 }
 
 :global(.wrapper:first-child) {
@@ -13,10 +31,6 @@
 
 :global(.wrapper.narrow) {
   width: 320px;
-}
-
-:global(.wrapper.wider) {
-  width: 640px;
 }
 
 :global(.content) {
