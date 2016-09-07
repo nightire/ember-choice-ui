@@ -1,13 +1,14 @@
 <div class="wrapper">
   <div class="content">
-    {{#choice/ui-form model as |f|}}
+    {{#choice/ui-form model class="app-input" as |f|}}
       {{f.checkbox-field "checkall" label="全选 Select All"}}
       {{f.checkbox-field "inversed" label="反选 Inverse To"}}
 
       {{f.radio-field "gender" 1 label="㊚"}}
       {{f.radio-field "gender" 0 label="㊛"}}
 
-      {{f.text-field "title" label="问卷标题" hint="最多不超过 100 个字符"}}
+      {{f.text-field "title" label="问卷标题" hint="最多不超过 100 个字符" wrapper="middle"}}
+      {{f.text-field "title" label="问卷标题" hint="最多不超过 100 个字符" wrapper="middle"}}
     {{/choice/ui-form}}
   </div>
 </div>

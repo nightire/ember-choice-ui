@@ -1,0 +1,1 @@
+export { default } from 'ember-choice-ui/components/choice/ui-form/text/component';
