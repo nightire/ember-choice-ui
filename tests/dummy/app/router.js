@@ -7,11 +7,6 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('ui-button');
-
-  this.route('ui-form');
-
-  this.route('ui-panel');
 });
 
 export default Router;
