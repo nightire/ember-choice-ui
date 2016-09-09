@@ -494,4 +494,17 @@
   &.ic-revert-d {
     @include stitches-ic(-320px, -480px, 40px, 40px);
   }
+
+  &.l {
+    float: left;
+    margin-right: 6px;
+  }
+  &.r {
+    float: right;
+    margin-left: 6px;
+  }
+  &.r.ic-down-2d,
+  &.l.ic-down-2d {
+    margin-top: -2px;
+  }
 }

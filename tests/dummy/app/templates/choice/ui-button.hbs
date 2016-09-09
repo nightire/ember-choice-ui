@@ -1,5 +1,61 @@
 <div class="wrapper">
-  {{choice/ui-button}}
-  {{choice/ui-button "取消" color="gray"}}
-  {{choice/ui-button "确定" color="green"}}
+  <div class="content">
+    {{choice/ui-button "BUTTON"}}
+    {{choice/ui-button "BUTTON" color="gray"}}
+    {{choice/ui-button "BUTTON" color="green"}}
+  </div>
+
+  <div class="content">
+    {{choice/ui-button "BUTTON" size="medium"}}
+    {{choice/ui-button "BUTTON" color="gray" size="medium"}}
+    {{choice/ui-button "BUTTON" color="green" size="medium"}}
+  </div>
+
+  <div class="content">
+    {{#choice/ui-button}}
+      {{choice/ui-icon "ic-plus-d" "l"}}
+      BUTTON
+    {{/choice/ui-button}}
+
+    {{#choice/ui-button}}
+      BUTTON
+      {{choice/ui-icon "ic-down-2d" "r"}}
+    {{/choice/ui-button}}
+
+    {{#choice/ui-button}}
+      {{choice/ui-icon "ic-plus-d" "l"}}
+      BUTTON
+      {{choice/ui-icon "ic-down-2d" "r"}}
+    {{/choice/ui-button}}
+  </div>
+
+  <div class="content">
+    {{#choice/ui-button color="clean"}}
+      {{choice/ui-icon "ic-plus-d" "l"}}
+      BUTTON
+    {{/choice/ui-button}}
+
+    {{#choice/ui-button color="clean"}}
+      BUTTON
+      {{choice/ui-icon "ic-down-2d" "r"}}
+    {{/choice/ui-button}}
+
+    {{#choice/ui-button color="clean"}}
+      {{choice/ui-icon "ic-plus-d" "l"}}
+      BUTTON
+      {{choice/ui-icon "ic-down-2d" "r"}}
+    {{/choice/ui-button}}
+  </div>
+
+  <div class="content">
+    {{#choice/ui-button color="green"}}
+      {{choice/ui-icon "ic-plus-w" "l"}}
+      添加
+    {{/choice/ui-button}}
+
+    {{#choice/ui-button color="gray"}}
+      选择
+      {{choice/ui-icon "ic-down-2d" "r"}}
+    {{/choice/ui-button}}
+  </div>
 </div>

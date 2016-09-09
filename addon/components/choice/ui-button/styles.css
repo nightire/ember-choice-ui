@@ -4,25 +4,49 @@
 .button {
   @apply --reset-box;
   @apply --truncate-text;
-  padding: 8px 12px;
-  background-color: transparent;
-  border-radius: 3px;
-  font-size: .875em;
-  font-weight: bold;
-  user-select: none;
+  padding: 7px 12px;
   cursor: pointer;
+  font-size: .875em;
+  line-height: 20px;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
   transition: all .3s ease;
+
+  & > i {
+    opacity: .5;
+    transition: opacity .2s ease;
+  }
+
+  &:hover > i,
+  &:focus > i {
+    opacity: 1;
+  }
 }
 
 .button.medium {
-  padding: 4px 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.button.default {
+  color: color(var(--color-dark-gray));
+  border: 1px solid color(var(--color-silver));
+
+  &:hover,
+  &:focus {
+    color: color(var(--color-dark-slate));
+    border: 1px solid color(var(--color-dark-slate));
+  }
 }
 
 .button.gray {
   color: color(var(--color-dark-gray));
   background-color: color(var(--color-silver) a(50%));
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: color(var(--color-dark-slate));
     background-color: color(var(--color-silver));
   }
@@ -32,7 +56,21 @@
   color: white;
   background-color: color(var(--color-sea-green));
 
-  &:hover, &:focus {
+  & > i {
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
     background-color: color(var(--color-sea-green) shade(25%));
+  }
+}
+
+.button.clean {
+  color: color(var(--color-dark-gray));
+
+  &:hover,
+  &:focus {
+    color: color(var(--color-dark-slate));
   }
 }

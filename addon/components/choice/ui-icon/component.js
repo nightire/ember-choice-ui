@@ -11,5 +11,9 @@ export default Component.extend({
     return this.get(`styles.${this.get('name')}`);
   }),
 
-  classNameBindings: ['styles.ic', 'iconClassName']
-}).reopenClass({ positionalParams: ['name'] });
+  positionClassName: computed('position', function() {
+    return this.get(`styles.${this.get('position')}`);
+  }),
+
+  classNameBindings: ['styles.ic', 'iconClassName', 'positionClassName']
+}).reopenClass({ positionalParams: ['name', 'position'] });

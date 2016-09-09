@@ -11,17 +11,14 @@ export default Component.extend({
   attributeBindings: ['type'],
   type: 'button',
 
-  size: 'medium',
   sizeClassName: computed('size', function() {
     return this.get(`styles.${this.get('size')}`);
   }),
 
-  color: 'gray',
+  color: 'default',
   colorClassName: computed('color', function() {
     return this.get(`styles.${this.get('color')}`);
   }),
 
   classNameBindings: ['styles.button', 'sizeClassName', 'colorClassName'],
-
-  content: 'BUTTON'
 }).reopenClass({ positionalParams: ['content'] });
