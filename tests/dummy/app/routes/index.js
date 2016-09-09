@@ -4,9 +4,9 @@ import { isNone } from 'ember-utils';
 
 const model = Ember.Object.create({
   form: Ember.Object.create({
-    checkall: true, 
-    inversed: false, 
-    gender: 1, 
+    checkall: true,
+    inversed: false,
+    gender: 1,
     title: '巧思问卷标题'
   })
 });
@@ -21,7 +21,7 @@ export default Route.extend({
   model(params) {
     return {
       components: [
-        'ui-button', 'ui-form', 'ui-panel'
+        'ui-button', 'ui-form', 'ui-panel', 'ui-dropdown'
       ],
       component: params.component
     };

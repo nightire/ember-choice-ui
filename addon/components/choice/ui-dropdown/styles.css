@@ -1,0 +1,57 @@
+@import "../../../styles/utilities.css";
+@import "../../../styles/variables.css";
+
+.trigger {
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.trigger.clean {
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+  }
+}
+
+.list {
+  @apply --reset-box;
+  overflow: auto;
+  max-height: 320px;
+  margin-top: -1px;
+  font-size: 12px;
+  line-height: 20px;
+  border: 1px solid color(var(--color-silver));
+  border-radius: 2px;
+  box-shadow: 0 3px 9px 0 color(black a(30%));
+
+  & > .tips {
+    padding: 2px 12px;
+    text-align: left;
+    color: color(var(--color-dark-gray));
+    border-bottom: 1px solid color(var(--color-silver) a(50%));
+  }
+
+  & > li {
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+
+  & > li:hover,
+  & > li:focus {
+    background-color: color(var(--color-silver) a(20%));
+  }
+
+  & > li:not(:last-of-type) {
+    border-bottom: 1px solid color(var(--color-silver));
+  }
+}
+
+:global(.ember-basic-dropdown-content--in-place) {
+  top: 36px;
+}

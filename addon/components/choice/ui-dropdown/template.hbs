@@ -1,0 +1,23 @@
+{{yield (hash
+  isOpen=publicAPI.isOpen
+  disabled=publicAPI.disabled
+  actions=publicAPI.actions
+  uniqueId=publicAPI.uniqueId
+  trigger=(component triggerComponent
+    dropdown=(readonly publicAPI)
+    hPosition=(readonly hPosition)
+    onFocus=(action "handleFocus")
+    renderInPlace=(readonly renderInPlace)
+    vPosition=(readonly vPosition)
+  )
+  content=(component contentComponent
+    dropdown=(readonly publicAPI)
+    hPosition=(readonly hPosition)
+    renderInPlace=(readonly renderInPlace)
+    vPosition=(readonly vPosition)
+    top=(readonly top)
+    left=(readonly left)
+    right=(readonly right)
+    width=(readonly width)
+  )
+  ) styles}}

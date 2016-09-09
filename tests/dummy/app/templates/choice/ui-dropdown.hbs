@@ -1,0 +1,151 @@
+<div class="wrapper">
+  <div class="content">
+    {{#choice/ui-dropdown renderInPlace=true as |dropdown styles|}}
+      {{#dropdown.trigger}}
+        {{choice/ui-icon "ic-plus-d" "l"}} 下拉列表
+      {{/dropdown.trigger}}
+
+      {{#dropdown.content}}
+        <ul class={{styles.list}}>
+          <div class={{styles.tips}}>请选择下列选项：</div>
+          <li>{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 {{choice/ui-icon "ic-checkmark-b" "r"}}</li>
+          <li>{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队</li>
+        </ul>
+      {{/dropdown.content}}
+    {{/choice/ui-dropdown}}
+
+    <details>
+      <summary>代码示例</summary>
+      <pre>
+        <code>
+          \{{#choice/ui-dropdown renderInPlace=true as |dropdown styles|}}
+            \{{#dropdown.trigger}}
+              \{{choice/ui-icon "ic-plus-d" "l"}} 下拉列表
+            \{{/dropdown.trigger}}
+
+            \{{#dropdown.content}}
+              &lt;ul class=\{{styles.list}}&gt;
+                &lt;div class=\{{styles.tips}}&gt;请选择下列选项：&lt;/div&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 \{{choice/ui-icon "ic-checkmark-b" "r"}}&lt;/li&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队&lt;/li&gt;
+              &lt;/ul&gt;
+            \{{/dropdown.content}}
+          \{{/choice/ui-dropdown}}
+        </code>
+      </pre>
+    </details>
+  </div>
+
+  <div class="content">
+    {{#choice/ui-dropdown as |dropdown styles|}}
+      {{#dropdown.trigger}}
+        下拉列表 {{choice/ui-icon "ic-down-2d" "r"}}
+      {{/dropdown.trigger}}
+
+      {{#dropdown.content}}
+        <ul class={{styles.list}}>
+          <div class={{styles.tips}}>请选择下列选项：</div>
+          <li>{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 {{choice/ui-icon "ic-checkmark-b" "r"}}</li>
+          <li>{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队</li>
+        </ul>
+      {{/dropdown.content}}
+    {{/choice/ui-dropdown}}
+
+    <details>
+      <summary>代码示例</summary>
+      <pre>
+        <code>
+          \{{#choice/ui-dropdown as |dropdown styles|}}
+            \{{#dropdown.trigger}}
+              下拉列表 \{{choice/ui-icon "ic-down-2d" "r"}}
+            \{{/dropdown.trigger}}
+
+            \{{#dropdown.content}}
+              &lt;ul class=\{{styles.list}}&gt;
+                &lt;div class=\{{styles.tips}}&gt;请选择下列选项：&lt;/div&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 \{{choice/ui-icon "ic-checkmark-b" "r"}}&lt;/li&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队&lt;/li&gt;
+              &lt;/ul&gt;
+            \{{/dropdown.content}}
+          \{{/choice/ui-dropdown}}
+        </code>
+      </pre>
+    </details>
+  </div>
+
+  <div class="content">
+    {{#choice/ui-dropdown as |dropdown styles|}}
+      {{#dropdown.trigger}}
+        {{choice/ui-icon "ic-plus-d" "l"}} 下拉列表 {{choice/ui-icon "ic-down-2d" "r"}}
+      {{/dropdown.trigger}}
+
+      {{#dropdown.content}}
+        <ul class={{styles.list}}>
+          <div class={{styles.tips}}>请选择下列选项：</div>
+          <li>{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 {{choice/ui-icon "ic-checkmark-b" "r"}}</li>
+          <li>{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队</li>
+        </ul>
+      {{/dropdown.content}}
+    {{/choice/ui-dropdown}}
+
+    <details>
+      <summary>代码示例</summary>
+      <pre>
+        <code>
+          \{{#choice/ui-dropdown as |dropdown styles|}}
+            \{{#dropdown.trigger}}
+              \{{choice/ui-icon "ic-plus-d" "l"}} 下拉列表 \{{choice/ui-icon "ic-down-2d" "r"}}
+            \{{/dropdown.trigger}}
+
+            \{{#dropdown.content}}
+              &lt;ul class=\{{styles.list}}&gt;
+                &lt;div class=\{{styles.tips}}&gt;请选择下列选项：&lt;/div&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 \{{choice/ui-icon "ic-checkmark-b" "r"}}&lt;/li&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队&lt;/li&gt;
+              &lt;/ul&gt;
+            \{{/dropdown.content}}
+          \{{/choice/ui-dropdown}}
+        </code>
+      </pre>
+    </details>
+  </div>
+
+  <div class="content">
+    {{#choice/ui-dropdown as |dropdown styles|}}
+      {{#dropdown.trigger class=styles.clean}}
+        下拉列表 {{choice/ui-icon "ic-down-2d" "r"}}
+      {{/dropdown.trigger}}
+
+      {{#dropdown.content}}
+        <ul class={{styles.list}}>
+          <div class={{styles.tips}}>请选择下列选项：</div>
+          <li>{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 {{choice/ui-icon "ic-checkmark-b" "r"}}</li>
+          <li>{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队</li>
+        </ul>
+      {{/dropdown.content}}
+    {{/choice/ui-dropdown}}
+
+    <details>
+      <summary>代码示例</summary>
+      <pre>
+        <code>
+          \{{#choice/ui-dropdown as |dropdown styles|}}
+            \{{#dropdown.trigger class=styles.clean}}
+              下拉列表 \{{choice/ui-icon "ic-down-2d" "r"}}
+            \{{/dropdown.trigger}}
+
+            \{{#dropdown.content}}
+              &lt;ul class=\{{styles.list}}&gt;
+                &lt;div class=\{{styles.tips}}&gt;请选择下列选项：&lt;/div&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-settings-d" "l"}} 设置团队 \{{choice/ui-icon "ic-checkmark-b" "r"}}&lt;/li&gt;
+                &lt;li&gt;\{{choice/ui-icon "ic-building-add-d" "l"}} 创建团队&lt;/li&gt;
+              &lt;/ul&gt;
+            \{{/dropdown.content}}
+          \{{/choice/ui-dropdown}}
+        </code>
+      </pre>
+    </details>
+  </div>
+
+  <p class="content">这个组件并不会限定按钮及菜单的宽度，如果希望让二者等宽，只需要定义：<code>.ember-basic-dropdown-trigger</code> 和 <code>.ember-basic-dropdown-content</code> 这两个样式类即可。这个行为应有调用者来自行定义会比较灵活。</p>
+</div>
