@@ -21,7 +21,7 @@ export default Route.extend({
   model(params) {
     return {
       components: [
-        'ui-button', 'ui-form', 'ui-panel', 'ui-dropdown'
+        'ui-button', 'ui-form', 'ui-panel', 'ui-dropdown', 'ui-page'
       ],
       component: params.component
     };

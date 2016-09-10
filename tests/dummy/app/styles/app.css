@@ -1,3 +1,8 @@
+body,
+body > :global(.ember-view) {
+  min-height: 100vh;
+}
+
 :global(.wrapper) {
   margin: 0 auto;
 }
@@ -19,10 +24,6 @@
   :global(.wrapper) {
     max-width: 940px;
   }
-}
-
-:global(.wrapper:first-child) {
-  margin-top: 12px;
 }
 
 :global(.wrapper:not(:last-child)) {

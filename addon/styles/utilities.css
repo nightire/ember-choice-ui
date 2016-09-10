@@ -10,4 +10,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
+  --responsive-row {
+    display: block;
+    clear: fix;
+    position: relative;
+    margin: 0 auto;
+  }
 }

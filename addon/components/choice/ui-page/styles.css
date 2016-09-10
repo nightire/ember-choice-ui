@@ -1,0 +1,36 @@
+@import "../../../styles/variables.css";
+@import "../../../styles/utilities.css";
+
+.header {
+  padding: 1rem 0;
+  background-color: white;
+  border: 1px solid transparent;
+  border-bottom-color: color(var(--color-silver));
+}
+
+@media (--below-laptop) {
+  .header {
+    text-align: center;
+  }
+}
+
+.header h1 {
+  display: inline-block;
+  float: left;
+  max-width: 320px;
+  @apply truncate-text;
+}
+
+.trigger {
+  float: left;
+  margin-left: 24px;
+  min-width: 160px;
+}
+
+.content {
+  min-width: 160px;
+}
+
+.header .right {
+  float: right;
+}

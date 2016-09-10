@@ -1,0 +1,17 @@
+{{#choice/ui-page as |page styles|}}
+  {{#page.header "我的图表" as |header|}}
+    {{#choice/ui-dropdown as |dropdown buttonStyles|}}
+      {{#dropdown.trigger class=styles.trigger}} 巧思 {{choice/ui-icon "ic-down-2d" "r"}} {{/dropdown.trigger}}
+
+      {{#dropdown.content}}
+        <ul class="{{buttonStyles.list}} {{styles.content}}">
+          <div class={{buttonStyles.tips}}>切换组织：</div>
+          <li>{{choice/ui-icon "ic-settings-d" "l"}} 设置组织 {{choice/ui-icon "ic-checkmark-b" "r"}}</li>
+          <li>{{choice/ui-icon "ic-building-add-d" "l"}} 创建组织</li>
+        </ul>
+      {{/dropdown.content}}
+    {{/choice/ui-dropdown}}
+
+    {{#header.button color="green" class=styles.right}} {{choice/ui-icon "ic-plus-w" "l"}} 创建图表 {{/header.button}}
+  {{/page.header}}
+{{/choice/ui-page}}
