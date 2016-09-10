@@ -5,7 +5,7 @@ module.exports = {
 
   isDevelopingAddon() { return true },
 
-  included: function(app, addon) {
+  included: function(app, parent) {
     this.options = Object.assign({}, this.options, {
       cssModules: {
         plugins: [
@@ -29,23 +29,14 @@ module.exports = {
             'color-tomato': '#e74c3c'
           }
         }
-      },
-      outputPaths: {
-        app: {
-          css: {'app': '/assets/bundle.css'},
-          js: '/assets/bundle.js',
-        },
       }
     });
+    this._super.included.call(this, app);
 
-    this._super.included.apply(this, arguments);
-
-    this.app = addon || app;
-
-    this.app.import(
+    const target = parent || app;
+    target.import(
       `./bower_components/normalize-css/normalize.css`, { prepend: true }
     );
-
-    this.app.import('./vendor/register-version.js');
+    target.import('./vendor/register-version.js');
   }
 };
