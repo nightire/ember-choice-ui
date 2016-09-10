@@ -1,8 +1,8 @@
 <div class="wrapper">
   <ul>
     {{#each model.components as |component|}}
-      {{#link-to "index" (query-params component=component)}}
-        <li>{{concat "choice/" component}}</li>
+      {{#link-to "index" (query-params component=component.name)}}
+        <li>{{concat component.namespace "/" component.name}}</li>
       {{/link-to}}
     {{/each}}
   </ul>

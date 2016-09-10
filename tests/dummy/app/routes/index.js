@@ -20,18 +20,24 @@ export default Route.extend({
 
   model(params) {
     return {
-      components: [
-        'ui-button', 'ui-form', 'ui-panel', 'ui-dropdown', 'ui-page'
-      ],
+      components: Ember.A([
+        {namespace: 'choice', name: 'ui-button'},
+        {namespace: 'choice', name: 'ui-form'},
+        {namespace: 'choice', name: 'ui-panel'},
+        {namespace: 'choice', name: 'ui-dropdown'},
+        {namespace: 'choice', name: 'ui-page'},
+        {namespace: 'choice-data', name: 'report-card'}
+      ]),
       component: params.component
     };
   },
 
-  renderTemplate(controller, { component }) {
-    if (isNone(component)) {
+  renderTemplate(_, m) {
+    if (isNone(m.component)) {
       return this._super(...arguments);
     }
 
-    this.render(`choice.${component}`, { model });
+    const component = m.components.findBy('name', m.component);
+    this.render(`${component.namespace}.${component.name}`, { model });
   }
 });
