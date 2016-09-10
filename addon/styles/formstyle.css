@@ -1,5 +1,6 @@
-@import "./utilities.css";
 @import "./variables.css";
+
+@value color-slate, color-silver from 'choice-ui/colors';
 
 :global(.form-field) {
   position: relative;
@@ -14,20 +15,20 @@
   @apply --truncate-text;
   display: block;
   margin-bottom: 12px;
-  color: color(var(--color-dark-slate));
+  color: color(color-slate);
 }
 
 /*
 :global(.form-field--hint) {
   display: block;
-  color: color(var(--color-silver));
+  color: color(color-silver);
 
   @media (--lt-md) { margin-top: 12px; font-size: 12px; }
   @media (--lg) {
     position: absolute 39px 0 auto auto;
     width: 30%;
     padding: 9px 0 10px 32px;
-    border-left: 1px solid color(var(--color-silver));
+    border-left: 1px solid color(color-silver);
     font-size: 13px;
   }
 }

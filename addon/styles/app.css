@@ -1,5 +1,6 @@
 @import "./variables.css";
-@import "./utilities.css";
+
+@value color-slate from 'choice-ui/colors';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,7 +15,7 @@ body {
 }
 
 body > :global(.ember-view) {
-  color: color(var(--color-dark-slate));
+  color: color(color-slate);
   background-color: #e9ebec;
 }
 

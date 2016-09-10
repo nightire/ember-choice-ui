@@ -1,5 +1,6 @@
-@import "../../../styles/utilities.css";
 @import "../../../styles/variables.css";
+
+@value color-gray, color-green, color-slate, color-silver from 'choice-ui/colors';
 
 .button {
   @apply --reset-box;
@@ -31,30 +32,30 @@
 }
 
 .button.default {
-  color: color(var(--color-dark-gray));
-  border: 1px solid color(var(--color-silver));
+  color: color(color-gray);
+  border: 1px solid color(color-silver);
 
   &:hover,
   &:focus {
-    color: color(var(--color-dark-slate));
-    border: 1px solid color(var(--color-dark-slate));
+    color: color(color-slate);
+    border: 1px solid color(color-slate);
   }
 }
 
 .button.gray {
-  color: color(var(--color-dark-gray));
-  background-color: color(var(--color-silver) a(50%));
+  color: color(color-gray);
+  background-color: color(color-silver a(50%));
 
   &:hover,
   &:focus {
-    color: color(var(--color-dark-slate));
-    background-color: color(var(--color-silver));
+    color: color(color-slate);
+    background-color: color(color-silver);
   }
 }
 
 .button.green {
   color: white;
-  background-color: color(var(--color-sea-green));
+  background-color: color(color-green);
 
   & > i {
     opacity: 1;
@@ -62,15 +63,15 @@
 
   &:hover,
   &:focus {
-    background-color: color(var(--color-sea-green) shade(25%));
+    background-color: color(color-green shade(25%));
   }
 }
 
 .button.clean {
-  color: color(var(--color-dark-gray));
+  color: color(color-gray);
 
   &:hover,
   &:focus {
-    color: color(var(--color-dark-slate));
+    color: color(color-slate);
   }
 }

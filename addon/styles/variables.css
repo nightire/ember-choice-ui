@@ -1,13 +1,22 @@
 :root {
-  --color-purple: #5940aa;
-  --color-blue: #1894f2;
-  --color-sea-green: #2ecc71;
-  --color-dark-slate: #4e5b68;
-  --color-dark-slate2: #34495e;
-  --color-gold: #f1c40f;
-  --color-tomato: #e74c3c;
-  --color-silver: #bdc3c7;
-  --color-dark-gray: #919ba2;
+  --reset-box {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  --truncate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  --responsive-row {
+    display: block;
+    clear: fix;
+    position: relative;
+    margin: 0 auto;
+  }
 }
 
 @custom-media --mobile only screen and (width <= 425px);

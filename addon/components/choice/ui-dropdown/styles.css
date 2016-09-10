@@ -1,5 +1,6 @@
-@import "../../../styles/utilities.css";
 @import "../../../styles/variables.css";
+
+@value color-gray, color-silver from 'choice-ui/colors';
 
 .trigger {
   display: inline-block;
@@ -26,15 +27,15 @@
   margin-top: -1px;
   font-size: 12px;
   line-height: 20px;
-  border: 1px solid color(var(--color-silver));
+  border: 1px solid color(color-silver);
   border-radius: 2px;
   box-shadow: 0 3px 9px 0 color(black a(30%));
 
   & > .tips {
     padding: 2px 12px;
     text-align: left;
-    color: color(var(--color-dark-gray));
-    border-bottom: 1px solid color(var(--color-silver) a(50%));
+    color: color(color-gray);
+    border-bottom: 1px solid color(color-silver a(50%));
   }
 
   & > li {
@@ -44,11 +45,11 @@
 
   & > li:hover,
   & > li:focus {
-    background-color: color(var(--color-silver) a(20%));
+    background-color: color(color-silver a(20%));
   }
 
   & > li:not(:last-of-type) {
-    border-bottom: 1px solid color(var(--color-silver));
+    border-bottom: 1px solid color(color-silver);
   }
 }
 

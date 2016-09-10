@@ -1,11 +1,12 @@
 @import "../../../styles/variables.css";
-@import "../../../styles/utilities.css";
+
+@value color-silver from 'choice-ui/colors';
 
 .header {
   padding: 1rem 0;
   background-color: white;
   border: 1px solid transparent;
-  border-bottom-color: color(var(--color-silver));
+  border-bottom-color: color(color-silver);
 }
 
 @media (--below-laptop) {

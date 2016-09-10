@@ -27,6 +27,7 @@
     "ember-cli-sri": "^2.1.1",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
+    "ember-css-modules": "0.4.4",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
@@ -47,13 +48,11 @@
     "ember-basic-dropdown": "0.15.0-beta.6",
     "ember-cli-babel": "^5.1.10",
     "ember-cli-htmlbars": "^1.1.0",
-    "ember-css-modules": "0.4.4",
     "ember-form-for": "2.0.0-alpha.9"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
     "after": [
-      "ember-cli-dotenv",
       "ember-basic-dropdown",
       "ember-form-for"
     ]
